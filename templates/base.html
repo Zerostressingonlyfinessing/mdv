@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>мебельдляванн.москва</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-4 bg-gray-800 shadow">
+        <div class="container mx-auto text-center text-2xl font-bold">
+            <a href="{{ url_for('index') }}">мебельдляванн.москва</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8 px-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="text-center p-4 text-gray-400">
+        &copy; {{ year }} мебельдляванн.москва
+    </footer>
+</body>
+</html>

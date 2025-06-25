@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-2xl font-bold mb-6">Добавить товар</h1>
+<form method="post" enctype="multipart/form-data" class="space-y-4 max-w-xl">
+    <input name="name" required placeholder="Название" class="w-full p-2 bg-gray-800 rounded" />
+    <textarea name="description" required placeholder="Описание" class="w-full p-2 bg-gray-800 rounded"></textarea>
+    <input name="category" required placeholder="Категория" class="w-full p-2 bg-gray-800 rounded" />
+    <input name="material" required placeholder="Материал" class="w-full p-2 bg-gray-800 rounded" />
+    <input name="price" placeholder="Цена" class="w-full p-2 bg-gray-800 rounded" />
+    <input type="file" name="images" multiple class="w-full p-2 bg-gray-800 rounded" />
+    <button class="bg-blue-600 px-4 py-2 rounded text-white">Добавить</button>
+</form>
+{% endblock %}
